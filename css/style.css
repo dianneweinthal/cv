@@ -19,9 +19,9 @@ p {font-family: 'Source Code Pro', sans-serif; font-size: 18px;
 .name {font-family: 'Source Code Pro', monospace; font-size: 50px; font-weight: 900; padding-bottom: 16px;}
 
 .container {margin: 0 auto; padding: 50px 50px; overflow: auto;
-background: #757F9A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #FFA17F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #00223E, #FFA17F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #00223E, #FFA17F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .meta {text-transform: uppercase; font-family: 'Source Sans Pro', sans-serif; font-size: 11px; letter-spacing: .15em;}
