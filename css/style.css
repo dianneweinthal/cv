@@ -1,5 +1,5 @@
 /* Stylez */
-body {font-family: 'Source Code Pro', monospace; margin: 0 auto; line-height: 1.8em; padding: 12px; box-sizing: border-box; color: #333;}
+body {font-family: 'Source Code Pro', monospace; margin: 0 auto; line-height: 1.8em; padding: 12px, 12px, 4px, 12px; box-sizing: border-box; color: #333;}
 body, html {height: 100%;}
 
 .wrapper {box-sizing: border-box; background: #fff; height: 100%; overflow: auto; }
