@@ -6,7 +6,7 @@ body, html {height: 100%;}
 
 a {color: #333; text-decoration: none; border-bottom: 2px solid #0000ff;}
 a:hover {color: #0000ff; border-bottom: 3px solid #0000ff;}
-p {font-family: 'Source Code Pro', sans-serif; font-size: 20px;
+p {font-family: 'Source Code Pro', sans-serif; font-size: 16px;
 
     display: block;
     margin-block-start: 1em;
@@ -16,9 +16,9 @@ p {font-family: 'Source Code Pro', sans-serif; font-size: 20px;
 }
 
 
-.name {font-family: 'Source Code Pro', monospace; font-size: 30px; font-weight: 900; padding-bottom: 16px;}
+.name {font-family: 'Source Code Pro', monospace; font-size: 50px; font-weight: 900; padding-bottom: 16px;}
 
-.container {margin: 0 auto; padding: 80px 30px; overflow: auto;}
+.container {margin: 0 auto; padding: 50px 50px; overflow: auto;}
 
 .meta {text-transform: uppercase; font-family: 'Source Sans Pro', sans-serif; font-size: 11px; letter-spacing: .15em;}
 .meta a:hover {border-bottom: 1px solid #0000ff;}
