@@ -1,4 +1,3 @@
-/* Stylez */
 body {font-family: 'Source Code Pro', monospace; margin: 0 auto; line-height: 1.8em; box-sizing: border-box; color: #333;}
 body, html {height: 100%;}
 
@@ -19,7 +18,7 @@ p {font-family: 'Source Code Pro', sans-serif; font-size: 20px;
 
 .name {font-family: 'Source Code Pro', monospace; font-size: 30px; font-weight: 900; padding-bottom: 16px;}
 
-.container {margin: 0 auto; padding: 80px 12px; overflow: auto;}
+.container {padding-left: 20px; margin: 0 auto; padding: 80px 12px; overflow: auto;}
 
 .meta {text-transform: uppercase; font-family: 'Source Sans Pro', sans-serif; font-size: 11px; letter-spacing: .15em;}
 .meta a:hover {border-bottom: 1px solid #0000ff;}
