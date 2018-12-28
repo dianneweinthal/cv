@@ -1,4 +1,4 @@
-body {font-family: 'Source Code Pro', monospace; margin: 0 auto; line-height: 1.8em; box-sizing: border-box; color: #333;}
+body {font-family: 'Source Code Pro', monospace; margin: 0 auto; line-height: 1.4em; box-sizing: border-box; color: #333;}
 body, html {height: 100%;}
 
 .wrapper {box-sizing: border-box; background: #fff; height: 100%; overflow: auto; }
@@ -6,7 +6,7 @@ body, html {height: 100%;}
 
 a {color: #333; text-decoration: none; border-bottom: 2px solid #0000ff;}
 a:hover {color: #0000ff; border-bottom: 3px solid #0000ff;}
-p {font-family: 'Source Code Pro', sans-serif; font-size: 16px;
+p {font-family: 'Source Code Pro', sans-serif; font-size: 18px;
 
     display: block;
     margin-block-start: 1em;
