@@ -1,4 +1,4 @@
-body {font-family: 'Source Code Pro', monospace; margin: 0 auto; line-height: 1.4em; box-sizing: border-box; color: #333;}
+body {font-family: 'Source Code Pro', monospace; font-size: 12px; margin: 0 auto; line-height: 1.6em; box-sizing: border-box; color: #333;}
 body, html {height: 100%;}
 
 .wrapper {box-sizing: border-box; background: #fff; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch;}
@@ -16,12 +16,12 @@ p {font-family: 'Source Code Pro', sans-serif; font-size: 18px;
 }
 
 
-.name {font-family: 'Source Code Pro', monospace; font-size: 50px; font-weight: 900; padding-bottom: 16px;}
+.name {font-family: 'Source Code Pro', monospace; font-size: 26px; font-weight: 900; padding-bottom: 18px;}
 
 .container {margin: 0 auto; padding: 50px 50px; overflow: auto;
-background: #ffff00;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #ffffff, #ffff00);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #ffffff, #ffff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #FFA500;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ffffff, #FFA500);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffffff, #FFA500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .meta {text-transform: uppercase; font-family: 'Source Sans Pro', sans-serif; font-size: 11px; letter-spacing: .15em;}
