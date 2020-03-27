@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/cov8sva.css">  
+    <link rel="stylesheet" type="text/css" href="update.css">
+    <link rel="icon" href="dw_shell.png" type="image/x-icon">
+    <title>DIANNE WEINTHAL</title>
+
+  </head>
+
+  <body>
+  	<canvas role="img" alt-text= "purple lava lamp" id="lamp-anim" class="lamp-anim" width="1500px" height="500px"></canvas>
+
+  	<div class="wrapper">
+    <div class="container">
+
+<header role="banner">
+  	<h1>DIANNE WEINTHAL</h1>
+  	</header>
+  	<p>working with image <br>
+  		as artwork <br>
+  		as visual resource <br>
+  		as digital information
+</p> 
+<main role="main">
+	<a class="collapsible"><div class="invert">ART</div></a>
+<div class="content">
+	<p>Image portfolios available at <a href="https://dianneweinthal.photo/" class="underline">dianneweinthal.photo</a> 
+	</p>
+	<p>Photography and photobooks included in the collections of <br>
+		Amon Carter Museum of American Art Library<br>
+		Getty Research Institute<br>
+		Hoxton Hotel, Los Angeles <br>
+		University of California, Los Angeles<br>
+		University of Colorado, Boulder<br>
+	</p>
+</div>
+
+<hr>
+
+<a class="collapsible"><div class="invert">WORK</div></a>
+<div class="content">
+  <p>CURRENTLY <br>
+  Reference and Digital Support at UCLA Arts Library</p>
+  <p>CONSISTENTLY <br>
+  image archives<br>
+  information interoperability<br>
+digital asset and infrastructure management</p>
+  <p>PREVIOUSLY <br>
+  	Assistant Project Archivist for the Andy Warhol Photography Collection at Cantor Arts Center
+</p>
+</div>
+
+<hr>
+
+<a class="collapsible"><div class="invert">CONSULTATION</div></a>
+<div class="content">
+  <p>PROJECTS <br>
+  collection development strategy<br>
+  digital asset management<br>
+  digital infrastructure design<br>
+  digitization initiatives and workflows<br>
+  digital preservation<br>
+  personal archiving<br> 
+  photographic materials & storage<br>  
+</p>
+  <p>PREVIOUS PARTNERS <br>
+  	Greater Los Angeles Veteran's Affairs Archive<br>
+  	June L. Mazer Lesbian Archives<br>
+  	Womens Studio Workshop<br>
+  	Deadbeat Club Press<br>
+  	Pier 24 Photography<br>
+  	Todd Hido 
+</p>
+<p>FOR CONSULTATION <br>
+Be in touch with dianne.weinthal (at) gmail.com</p>
+</div>
+
+<hr>
+
+<a class="collapsible"><div class="invert">EDUCATION</div></a>
+<div class="content">
+  <p>UCLA expected June 2020 | MLIS, Informatics & Archives 
+</p>
+<p>Stanford University, 2014 | BA Art History, Modern & Contemporary</p>
+</div>
+
+<hr>
+
+<a class="collapsible"><div class="invert">INFORMATION</div></a>
+<div class="content">
+<p>Dianne Weinthal is an archivist, artist, and publisher based in Los Angeles, California. She works on ways to make our interactions with images more aligned with how we create and share them. She cares about the social implications of image media and digital infrastructure design.
+</p>
+<p>She holds a BA in Art History from Stanford University and is pursuing a Masters in Library and Information Science at UCLA, where her focus is on photography as artwork, as visual resource, and as digital information.
+</p>
+<p>CV: <a href="DianneWeinthal_CV.pdf" aria-label="PDF document download link" class="underline">download</a><br>
+Contact: dianne.weinthal (at) gmail.com<br>
+Lava lamp canvas adapted from: <a href="https://codepen.io/innersociety/pen/rEXoer" class="underline">Dylan Dunaway</a></p>
+
+<p>
+This site aims to follow WCAG 2.1. If you experience accessibility issues, please be in touch with dianne.weinthal (at) gmail.com
+</p>
+</div>
+
+<hr>
+</main>
+
+<footer role="contentinfo">
+
+<p>Last updated: 2020-03-27 <br>
+Currently reading: <em>You Were Born For This</em> by Chani Nicholas</p>
+
+</footer>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+window.lavaAnimation = (function() {
+  "use strict";
+  var t,
+    i = {
+      screen: {
+        elem: null,
+        callback: null,
+        ctx: null,
+        width: 0,
+        height: 0,
+        left: 0,
+        top: 0,
+        init: function(t, i, s) {
+          return (
+            (this.elem = document.getElementById(t)),
+            (this.callback = i || null),
+            "CANVAS" == this.elem.tagName &&
+              (this.ctx = this.elem.getContext("2d")),
+            window.addEventListener(
+              "resize",
+              function() {
+                this.resize();
+              }.bind(this),
+              !1
+            ),
+            (this.elem.onselectstart = function() {
+              return !1;
+            }),
+            (this.elem.ondrag = function() {
+              return !1;
+            }),
+            s && this.resize(),
+            this
+          );
+        },
+        resize: function() {
+          var t = this.elem;
+          for (
+            this.width = t.offsetWidth,
+              this.height = t.offsetHeight,
+              this.left = 0,
+              this.top = 0;
+            null != t;
+            t = t.offsetParent
+          )
+            (this.left += t.offsetLeft), (this.top += t.offsetTop);
+          this.ctx &&
+            ((this.elem.width = this.width), (this.elem.height = this.height)),
+            this.callback && this.callback();
+        }
+      }
+    },
+    s = function(t, i) {
+      (this.x = t),
+        (this.y = i),
+        (this.magnitude = t * t + i * i),
+        (this.computed = 0),
+        (this.force = 0);
+    };
+  s.prototype.add = function(t) {
+    return new s(this.x + t.x, this.y + t.y);
+  };
+  var h = function(t) {
+    var i = 0.1,
+      h = 1.5;
+    (this.vel = new s(
+      (Math.random() > 0.5 ? 1 : -1) * (0.2 + 0.25 * Math.random()),
+      (Math.random() > 0.5 ? 1 : -1) * (0.2 + Math.random())
+    )),
+      (this.pos = new s(
+        0.2 * t.width + Math.random() * t.width * 0.6,
+        0.2 * t.height + Math.random() * t.height * 0.6
+      )),
+      (this.size = t.wh / 15 + (Math.random() * (h - i) + i) * (t.wh / 15)),
+      (this.width = t.width),
+      (this.height = t.height);
+  };
+  h.prototype.move = function() {
+    this.pos.x >= this.width - this.size
+      ? (this.vel.x > 0 && (this.vel.x = -this.vel.x),
+        (this.pos.x = this.width - this.size))
+      : this.pos.x <= this.size &&
+        (this.vel.x < 0 && (this.vel.x = -this.vel.x),
+        (this.pos.x = this.size)),
+      this.pos.y >= this.height - this.size
+        ? (this.vel.y > 0 && (this.vel.y = -this.vel.y),
+          (this.pos.y = this.height - this.size))
+        : this.pos.y <= this.size &&
+          (this.vel.y < 0 && (this.vel.y = -this.vel.y),
+          (this.pos.y = this.size)),
+      (this.pos = this.pos.add(this.vel));
+  };
+  var e = function(t, i, e, n, a) {
+    (this.step = 5),
+      (this.width = t),
+      (this.height = i),
+      (this.wh = Math.min(t, i)),
+      (this.sx = Math.floor(this.width / this.step)),
+      (this.sy = Math.floor(this.height / this.step)),
+      (this.paint = !1),
+      (this.metaFill = r(t, i, t, n, a)),
+      (this.plx = [0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0]),
+      (this.ply = [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1]),
+      (this.mscases = [0, 3, 0, 3, 1, 3, 0, 3, 2, 2, 0, 2, 1, 1, 0]),
+      (this.ix = [
+        1,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]),
+      (this.grid = []),
+      (this.balls = []),
+      (this.iter = 0),
+      (this.sign = 1);
+    for (var o = 0; o < (this.sx + 2) * (this.sy + 2); o++)
+      this.grid[o] = new s(
+        (o % (this.sx + 2)) * this.step,
+        Math.floor(o / (this.sx + 2)) * this.step
+      );
+    for (var l = 0; e > l; l++) this.balls[l] = new h(this);
+  };
+  (e.prototype.computeForce = function(t, i, s) {
+    var h,
+      e = s || t + i * (this.sx + 2);
+    if (0 === t || 0 === i || t === this.sx || i === this.sy)
+      h = 0.6 * this.sign;
+    else {
+      h = 0;
+      for (var r, n = this.grid[e], a = 0; (r = this.balls[a++]); )
+        h +=
+          r.size *
+          r.size /
+          (-2 * n.x * r.pos.x -
+            2 * n.y * r.pos.y +
+            r.pos.magnitude +
+            n.magnitude);
+      h *= this.sign;
+    }
+    return (this.grid[e].force = h), h;
+  }),
+    (e.prototype.marchingSquares = function(t) {
+      var i = t[0],
+        s = t[1],
+        h = t[2],
+        e = i + s * (this.sx + 2);
+      if (this.grid[e].computed === this.iter) return !1;
+      for (var r, n = 0, a = 0; 4 > a; a++) {
+        var l = i + this.ix[a + 12] + (s + this.ix[a + 16]) * (this.sx + 2),
+          d = this.grid[l].force;
+        ((d > 0 && this.sign < 0) || (0 > d && this.sign > 0) || !d) &&
+          (d = this.computeForce(i + this.ix[a + 12], s + this.ix[a + 16], l)),
+          Math.abs(d) > 1 && (n += Math.pow(2, a));
+      }
+      if (15 === n) return [i, s - 1, !1];
+      5 === n
+        ? (r = 2 === h ? 3 : 1)
+        : 10 === n
+          ? (r = 3 === h ? 0 : 2)
+          : ((r = this.mscases[n]), (this.grid[e].computed = this.iter));
+      var p =
+        this.step /
+        (Math.abs(
+          Math.abs(
+            this.grid[
+              i +
+                this.plx[4 * r + 2] +
+                (s + this.ply[4 * r + 2]) * (this.sx + 2)
+            ].force
+          ) - 1
+        ) /
+          Math.abs(
+            Math.abs(
+              this.grid[
+                i +
+                  this.plx[4 * r + 3] +
+                  (s + this.ply[4 * r + 3]) * (this.sx + 2)
+              ].force
+            ) - 1
+          ) +
+          1);
+      return (
+        o.lineTo(
+          this.grid[i + this.plx[4 * r] + (s + this.ply[4 * r]) * (this.sx + 2)]
+            .x +
+            this.ix[r] * p,
+          this.grid[
+            i + this.plx[4 * r + 1] + (s + this.ply[4 * r + 1]) * (this.sx + 2)
+          ].y +
+            this.ix[r + 4] * p
+        ),
+        (this.paint = !0),
+        [i + this.ix[r + 4], s + this.ix[r + 8], r]
+      );
+    }),
+    (e.prototype.renderMetaballs = function() {
+      for (var t, i = 0; (t = this.balls[i++]); ) t.move();
+      for (
+        this.iter++,
+          this.sign = -this.sign,
+          this.paint = !1,
+          o.fillStyle = this.metaFill,
+          o.beginPath(),
+          i = 0;
+        (t = this.balls[i++]);
+
+      ) {
+        var s = [
+          Math.round(t.pos.x / this.step),
+          Math.round(t.pos.y / this.step),
+          !1
+        ];
+        do s = this.marchingSquares(s);
+        while (s);
+        this.paint &&
+          (o.fill(), o.closePath(), o.beginPath(), (this.paint = !1));
+      }
+    });
+  var r = function(t, i, s, h, e) {
+    var r = o.createRadialGradient(t / 1, i / 1, 0, t / 1, i / 1, s);
+    return r.addColorStop(0, h), r.addColorStop(1, e), r;
+  };
+  if (document.getElementById("lamp-anim")) {
+    var n = function() {
+        requestAnimationFrame(n),
+          o.clearRect(0, 0, a.width, a.height),
+          t.renderMetaballs();
+      },
+      a = i.screen.init("lamp-anim", null, !0),
+      o = a.ctx;
+    a.resize(), (t = new e(a.width, a.height, 6, "#9900cc44", "#9900cc44"));
+  }
+  return { run: n };
+})();
+
+if (document.getElementById("lamp-anim")) {
+  lavaAnimation.run();
+}
+setTimeout(function() {
+  $(".js-works-d-list").addClass("is-loaded");
+}, 150);
+
+</script>
+  </div>
+  </div>	
+  </body>
+</html>

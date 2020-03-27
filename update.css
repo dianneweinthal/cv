@@ -1,0 +1,71 @@
+.wrapper {box-sizing: border-box; background: #fff; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch;}
+
+.container {margin: 0 auto; padding: 50px 80px; overflow: auto; }
+
+body {font-family: neue-haas-grotesk-display, sans-serif; font-weight: 500; 
+    font-size: 48px; line-height: 72px;}
+a {color: #333; text-decoration: none; }
+a:hover {color: #6600cc; color: white; background: black;}
+
+
+h1 {font-family: neue-haas-grotesk-display, sans-serif; font-weight: 500; 
+    font-size: 60px; line-height: 60px;} 
+
+p {font-family: neue-haas-grotesk-display, sans-serif;
+
+
+font-weight: 500;
+
+font-style: normal; font-size: 30px;
+    line-height: 42px;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 26px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.invert:hover {
+	background-color: black;
+	color: white;
+}
+ 	
+
+.collapsible {
+  cursor: pointer;
+  background-color: white;   
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+  font-size: 44px;
+  font-weight: 500px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+
+.active { 
+font-weight: 600;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+canvas{
+    position: fixed;
+    z-index: .1;
+    width: 100%;
+    Height: 100%;
+    pointer-events: none;
+  }
+
