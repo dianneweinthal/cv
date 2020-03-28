@@ -71,6 +71,8 @@ canvas{
 /*media query, mobile breakpoint set to 450px*/
 @media (max-width: 450px) { 
   .container {
-    padding: 25px;
+    padding: 25px;}
+  p {font-size: 24px;}
+  h1 {font-size: 48px;}  
   }
 
