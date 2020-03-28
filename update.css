@@ -11,6 +11,9 @@ a:hover {font-style: italic; font-weight: 600;}
 h1 {font-family: neue-haas-grotesk-display, sans-serif; font-weight: 500; 
     font-size: 60px; line-height: 60px;} 
 
+h2 {font-family: neue-haas-grotesk-display, sans-serif; font-weight: 400; 
+    font-size: 36px; line-height: 48px; padding: 0}  
+
 p {font-family: neue-haas-grotesk-display, sans-serif;
 
 
@@ -73,6 +76,7 @@ canvas{
   .container {
     padding: 25px;}
   p {font-size: 20px; line-height: 32px;}
-  h1 {font-size: 48px;}  
+  h1 {font-size: 48px;}
+  h2 {font-size: 24px; line-height: 36px;}  
   }
 
