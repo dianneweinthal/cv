@@ -68,4 +68,9 @@ canvas{
     Height: 100%;
     pointer-events: none;
   }
+/*media query, mobile breakpoint set to 450px*/
+@media (max-width: 450px) { 
+  .container {
+    padding: 25px;
+  }
 
