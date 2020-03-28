@@ -1,4 +1,4 @@
-.wrapper {box-sizing: border-box; background: #fff; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch;}
+.wrapper {box-sizing: border-box; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch;}
 
 .container {margin: 0 auto; padding: 50px 80px; overflow: auto; }
 
