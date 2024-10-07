@@ -107,7 +107,7 @@ canvas{
   p {font-size: 20px; line-height: 1.5em;}
   ul {font-size: 20px; line-height: 1.5em;}
   h1 {font-size: 48px;}
-  h2 {font-size:32px;line-height: 1.5em;}
+  h2 {font-size:32px;line-height: 1.5em; font-weight: 500;}
   h3 {font-size: 24px; line-height: 1.5em;}  
   }
 
