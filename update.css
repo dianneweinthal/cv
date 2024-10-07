@@ -11,25 +11,32 @@ a:hover {font-style: italic; font-weight: 600;}
 h1 {font-family: neue-haas-grotesk-display, sans-serif; font-weight: 500; 
     font-size: 60px; line-height: 60px;} 
 
-h2 {font-family: neue-haas-grotesk-display, sans-serif; font-weight: 400; 
-    font-size: 30px; line-height: 1.25em; padding: 0
-    margin-top:22px;
-    margin-bottom: 8px;}  
+h2 { 
+  font-size: 44px;
+  font-weight: 500px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  } 
 
-p {font-family: neue-haas-grotesk-display, sans-serif;
+h3 {
+  font-family: neue-haas-grotesk-display, sans-serif; 
+  font-weight: 400; 
+  font-size: 30px; 
+  line-height: 1.25em; 
+  padding: 0;
+  margin-top:22px;
+  margin-bottom: 8px;}  
 
-
-font-weight: 500;
-
-font-style: normal; font-size: 24px;
-    line-height: 1.5em;
-
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 26px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-top: 8px;
+p {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal; font-size: 24px;
+  line-height: 1.5em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 26px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 8px;
 }
 
 
@@ -63,9 +70,6 @@ li {
   padding: 0px;
   width: 100%;
   text-align: left;
-  font-size: 44px;
-  font-weight: 500px;
-  font-family: neue-haas-grotesk-display, sans-serif;
 }
 
 
