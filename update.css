@@ -13,8 +13,9 @@ h1 {font-family: neue-haas-grotesk-display, sans-serif; font-weight: 500;
 
 h2 { 
   font-size: 44px;
-  font-weight: 500px;
   font-family: neue-haas-grotesk-display, sans-serif;
+  padding: 0px;
+  margin: 0;
   } 
 
 h3 {
@@ -69,6 +70,7 @@ li {
   background-color: white;   
   padding: 0px;
   width: 100%;
+  font-weight: 500px;
   text-align: left;
 }
 
