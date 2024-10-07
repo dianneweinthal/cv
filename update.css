@@ -70,8 +70,9 @@ li {
   background-color: white;   
   padding: 0px;
   width: 100%;
-  font-weight: 500px;
+  font-weight: 400px;
   text-align: left;
+  margin:0;
 }
 
 
