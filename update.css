@@ -31,7 +31,8 @@ h3 {
 p {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
-  font-style: normal; font-size: 24px;
+  font-style: normal; 
+  font-size: 24px;
   line-height: 1.5em;
   display: block;
   margin-block-start: 1em;
@@ -81,11 +82,17 @@ font-style: italic;
 font-weight: 600;
 }
 
+.collapsible.active {
+  font-weight: 600;
+}
+
 .underline {
 	text-decoration: underline;
 }
 
-
+.small {
+  font-size: 18px;
+}
 
 .content {
   padding: 0 18px;
@@ -109,6 +116,9 @@ canvas{
   ul {font-size: 18px; line-height: 1.5em;}
   h1 {font-size: 40px;}
   h2 {font-size:32px;line-height: 1.5em;}
-  h3 {font-size: 24px; line-height: 1.5em;}  
+  h3 {font-size: 24px; line-height: 1.5em;} 
+  .small {
+    font-size: 14px;
+  } 
   }
 
